@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body bgcolor="#212529" class="google-font">
+    <header>
+      <h1 class="text-white text-center header">VIRTUAL PIANO</h1>
+    </header>
+    <section>
+      <div class="pianoContainer google-font">
+        <div class="first_key  text-white" onclick="play1()">1</div>
+        <div class="second_key text-white" onclick="play2()">2</div>
+        <div class="third_key text-white" onclick="play3()">3</div>
+        <div class="fourth_key text-white" onclick="play4()">4</div>
+        <div class="five_key text-white" onclick="play5()">5</div>
+        <div class="sixth_key text-white" onclick="play6()">6</div>
+        <div class="seventh_key text-white" onclick="play7()">7</div>
+        <div class="eighth_key text-white" onclick="play8()">8</div>
+      </div>
+    </section>
+    <section class="buttonContainer">
+      <button
+        class="google-font btn-outline-primary"
+        id="para"
+        onclick="changeColor('bg-primary');"
+      >
+        CHANGE
+      </button>
+      <button
+        class="google-font btn-outline-danger"
+        id="para"
+        onclick="changeColor('bg-danger');"
+      >
+        CHANGE
+      </button>
+      <button
+        class="google-font btn-outline-warning"
+        id="para"
+        onclick="changeColor('bg-warning');"
+      >
+        CHANGE
+      </button>
+      <button
+        class="google-font btn-outline-success"
+        id="para"
+        onclick="changeColor('bg-success');"
+      >
+        CHANGE
+      </button>
+      <button
+        class="google-font btn-outline-dark"
+        id="para"
+        onclick="changeColor('bg-dark');"
+      >
+        CHANGE
+      </button>
+     
+    </section>    
+    
+  </body>
+</html>

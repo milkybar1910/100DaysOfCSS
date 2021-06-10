@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  margin: 2rem 0 1rem 0;
+}
+
+.google-font {
+  font-family: "Rubik", sans-serif;
+}
+
+.pianoContainer {
+  border: 2px solid #212529;
+  width: 40rem;
+  margin: 4rem auto;
+  height: 30rem;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: #111;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+.bg-danger {
+  background-color: #d82e2f !important;
+}
+.bg-warning {
+  background-color: #f4be2c !important;
+}
+.bg-success {
+  background-color: #1faa59 !important;
+}
+.bg-dark {
+  background-color: #111 !important;
+}
+
+.first_key {
+  flex: 1;
+  border-right: 2px solid #212529;
+}
+
+.second_key {
+  flex: 1;
+  border-right: 2px solid #212529;
+}
+
+.third_key {
+  flex: 1;
+  border-right: 2px solid #212529;
+}
+
+.fourth_key {
+  flex: 1;
+  border-right: 2px solid #212529;
+}
+
+.five_key {
+  flex: 1;
+  border-right: 2px solid #212529;
+}
+
+.sixth_key {
+  flex: 1;
+  border-right: 2px solid #212529;
+}
+
+.seventh_key {
+  flex: 1;
+
+  border-right: 2px solid #212529;
+}
+
+.eighth_key {
+  flex: 1;
+}
+.first_key:active,
+.sixth_key:active,
+.second_key:active,
+.third_key:active,
+.fourth_key:active,
+.five_key:active,
+.seventh_key:active,
+.eighth_key:active {
+  background-color: #343a40;
+}
+
+.buttonContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 70rem;
+}
+
+.btn-outline-primary {
+  background-color: #212529;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 0.3rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+.btn-outline-primary:hover {
+  transition: 0.5s;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-outline-danger {
+  background-color: #212529;
+  color: #d82e2f;
+  border: 2px solid #d82e2f;
+  border-radius: 0.3rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+.btn-outline-danger:hover {
+  transition: 0.5s;
+  background-color: #d82e2f;
+  color: #fff;
+}
+.btn-outline-warning {
+  background-color: #212529;
+  color: #f4be2c;
+  border: 2px solid #f4be2c;
+  border-radius: 0.3rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+.btn-outline-warning:hover {
+  transition: 0.5s;
+  background-color: #f4be2c;
+  color: #111;
+}
+.btn-outline-success {
+  background-color: #212529;
+  color: #1faa59;
+  border: 2px solid #1faa59;
+  border-radius: 0.3rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+.btn-outline-success:hover {
+  transition: 0.5s;
+  background-color: #1faa59;
+  color: #fff;
+}
+.btn-outline-dark {
+  background-color: #212529;
+  color: #fff;
+  border: 2px solid #343a40;
+  border-radius: 0.3rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+.btn-outline-dark:hover {
+  transition: 0.5s;
+  background-color: #343a40;
+  color: #fff;
+}
