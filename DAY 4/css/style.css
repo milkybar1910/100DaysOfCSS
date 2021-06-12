@@ -70,11 +70,6 @@ li {
   margin-top: 7rem;
 }
 
-.skill-heading {
-  font-size: 2.5rem;
-  margin: 5rem auto;
-}
-
 .text-success {
   color: #10bb4a;
 }
@@ -83,15 +78,26 @@ li {
   text-align: center;
 }
 
+.HEAD_SKILL .skill-heading {
+  display: inline-block;
+  position: relative;
+  font-size: 2.5rem;
+  margin: 5rem auto;
+}
+
 .HEAD_SKILL {
   display: flex;
   line-height: 0.5;
   text-align: center;
 }
 
-.HEAD_SKILL .skill-heading {
-  display: inline-block;
-  position: relative;
+.skill-icon {
+  margin: 2rem auto auto 3rem;
+  flex: 1;
+}
+
+.card-header {
+  display: flex;
 }
 
 .card1,
@@ -106,9 +112,6 @@ li {
   margin: auto auto 3rem auto;
 }
 
-.card-header {
-  display: flex;
-}
 .skill-heading::after,
 .skill-heading::before {
   content: "";
@@ -125,11 +128,6 @@ li {
 .skill-heading:after {
   left: 100%;
   margin-left: 15px;
-}
-.skill-icon {
-  margin-left: 3rem;
-  margin-top: 2rem;
-  flex: 1;
 }
 
 .card_heading {
