@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Crete+Round&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Oxanium:wght@600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=M+PLUS+Rounded+1c:wght@500&display=swap");
+
+.font-style-NotoSans {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.font-style-Oxanium {
+  font-family: "Oxanium", cursive;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-grid {
+    display: grid;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6";
+    grid-row-gap: 10%;
+    width: 100%;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    border: 2px solid #10bb4a;
+    width: 75%;
+    height: auto;
+    justify-self: center;
+    display: grid;
+    padding: 0 5% 5%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .container-grid {
+    display: grid;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6";
+    grid-row-gap: 2%;
+    width: 100%;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    border: 2px solid #10bb4a;
+    width: auto;
+    justify-self: flex-start;
+    display: grid;
+    padding: 0 5% 5%;
+  }
+}
+
+.text-success {
+  color: #10bb4a;
+}
+
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+.card6 {
+  grid-area: card6;
+}
+
+.card-header {
+  justify-self: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card_heading {
+  font-size: 2em;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.card-body {
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Crete Round", serif;
+}
+
+.navbar {
+  background-color: #10bb4a;
+  display: grid;
+  grid-template-areas: "navHeader navTab";
+  max-width: 100%;
+  max-height: 100%;
+  padding: 2% 0;
+  margin-bottom: 2%;
+}
+
+.navText {
+  grid-area: navHeader;
+  justify-self: center;
+}
+
+.nav-tabs {
+  grid-area: navTab;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-tabs > a {
+  text-decoration: none;
+  color: #111;
+  margin: auto 3%;
+}
+
+.nav-icon {
+  display: none;
+  grid-area: navIcon;
+}
+
+.nav-icon .icon {
+  text-decoration: none;
+  color: #111;
+  margin: auto 3%;
+}
+
+.nav-tabs > a:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  .navText {
+    padding: 5% 0%;
+  }
+  .nav-tabs {
+    display: none;
+  }
+  .navText {
+    margin-left: 5%;
+    justify-self: flex-start;
+  }
+  .nav-icon {
+    display: block;
+    justify-self: flex-end;
+    grid-area: navIcon;
+    margin-right: 5%;
+    align-self: center;
+  }
+  .navbar {
+    display: grid;
+    grid-template-areas: "navHeader navIcon";
+  }
+
+  .responsive.navbar {
+    grid-template-areas:
+      "navHeader navIcon"
+      "navTab navTab";
+  }
+
+  .responsive > .nav-tabs {
+    display: flex;
+    grid-area: navTab;
+    flex-direction: column;
+    margin-top: 3%;
+  }
+  .responsive .nav-tabs > a {
+    width: 100%;
+    margin: 0%;
+    text-indent: 3%;
+    border: 1px solid black;
+    padding: 3% 0%;
+  }
+  .responsive .nav-tabs > a:hover {
+    color: #111;
+    background-color: #f2f2f2;
+    padding: 3% 0%;
+    transition: 0.5s;
+  }
+}
+
+.home {
+  display: grid;
+  grid-template-areas: "welcome-text welcome-img";
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  margin: 3% 10%;
+  height: auto;
+}
+
+.welcome-text {
+  grid-area: welcome-text;
+  font-family: "Crete Round", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeHeading {
+  font-weight: normal;
+  font-size: 3vw;
+
+  align-self: stretch;
+}
+
+.welcome-img {
+  grid-area: welcome-img;
+  justify-self: center;
+  align-self: center;
+}
+.welcome-img > img {
+  width: 20vw;
+  height: auto;
+}
+.welcome-text > .welcomeBody {
+  height: auto;
+  font-size: 1.3vw;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    grid-template-areas: "welcome-text";
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-text > .welcomeBody {
+    display: flex;
+    font-size: 1em !important;
+    line-height: 1.5em;
+  }
+  .welcome-img {
+    display: none;
+  }
+  .welcomeHeading {
+    font-size: 1.5em !important;
+  }
+}
