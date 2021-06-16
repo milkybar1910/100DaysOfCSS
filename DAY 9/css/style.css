@@ -74,6 +74,7 @@
     margin-right: 10%;
     align-self: center;
   }
+
   .navbar {
     display: grid;
     grid-template-areas: "navHeader navIcon";
